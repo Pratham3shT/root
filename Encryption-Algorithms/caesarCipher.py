@@ -1,3 +1,24 @@
+"""
+Caesar Cipher is a substition cipher and the simplest, first used by Julius Caesar, the Roman emperor.
+This technique invloves replacing each letter of the alphabet with the letter standing k places further down the alphabet.
+
+a -> 0
+b -> 1
+c -> 3
+..
+..
+z - > 25
+
+Alphabets are wrapped around, after z, a is repeated.
+
+For each plain text p, substitute the cipher text c . We can shift using k from 1 to 25 places.
+For encryption:
+c = E(k, p) = (p+k) mod 26
+
+For decryption:
+p = D(k, c) = (c-k) mod 26
+"""
+
 def input_encrypt():
     print("Enter your plain text: ", end="")
     plain_text = str(input())
